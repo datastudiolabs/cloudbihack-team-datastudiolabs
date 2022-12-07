@@ -9,13 +9,13 @@ To use our [Google Sheets What-If connector](https://lookerstudio.google.com/dat
 
 2. Once we create the Google Sheets model, now we're ready to connect to Looker Studio using our Google Sheets What-If Connector. We start by either selecting the Google Sheet from a dropdown or by entering the Google Sheets ID directly. Once we do that, our community connector will let you select a specific tab from your Google Sheet. Now we're ready to setup all default parameters. We can opt-in to allow these parameters while we view the Looker Studio dashboard.
 
-3. We can now start building the Looker Studio dashboard as we usually do with the regular Google Sheets connector by Google. But the real magic starts when we pull in some of the parameters to our Looker Studio canvas ([watch the short video below](https://youtu.be/ZBoFvaWr-Dk))
+3. We can now start building the Looker Studio dashboard as we usually do with the regular Google Sheets connector by Google. But the real magic starts when we pull in some of the parameters to our Looker Studio canvas ([watch the short video below](https://youtu.be/ARMQLh0tyA4))
 
 
 ## Quick Help Video
 You can have a look at the following quick help video incase you're not familiar with how Looker Studio & Looker Studio Community Connectors work.
 
-[![IMAGE_ALT](https://img.youtube.com/vi/ZBoFvaWr-Dk/maxresdefault.jpg)](https://youtu.be/ZBoFvaWr-Dk)
+[![IMAGE_ALT](https://img.youtube.com/vi/ARMQLh0tyA4/maxresdefault.jpg)](https://youtu.be/ARMQLh0tyA4)
 
 ## Resources
 - [Scenario Manager Demo Dashboard](https://datastudio.google.com/s/iPrdyrewLig)
