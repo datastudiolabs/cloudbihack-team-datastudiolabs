@@ -1,0 +1,23 @@
+{
+  "timeZone": "Asia/Colombo",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dataStudio": {
+    "name": "Google Sheets What-If",
+    "logoUrl": "https://www.datastudiolabs.com/wp-content/uploads/2022/07/cropped-Logo-Favicon-192x192.png",
+    "company": "Data Studio Labs",
+    "companyUrl": "https://www.datastudiolabs.com/",
+    "addonUrl": "https://www.datastudiolabs.com/about-us/",
+    "supportUrl": "https://www.datastudiolabs.com/contact-us/",
+    "description": "A Google Sheets Data Connector that supports data modeling inside Looker Studio, created by Team Data Studio Labs for the Google Cloud BI Hackathon 2022",
+    "sources": [
+      "GOOGLE SHEETS"
+    ],
+    "advancedServices": {
+      "data": false,
+      "schema": false
+    }
+  }
+}
