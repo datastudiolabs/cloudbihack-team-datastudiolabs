@@ -1,8 +1,5 @@
 # Google Sheets What-If Community Connector
 
-## Repository Description
-This repository contains code related to the Google Apps Script that was used to create a Looker Studio Community Connector which is our project for the Google Cloud BI Hackathon 2022.
-
 ## Introduction to Scenario Manager
 Scenario manager for Looker Studio allows you to change or substitute input values for multiple cells in a Google Sheet (in this Hackathon we have limited it to 6, but we can make it to something like 32 cells just like in Microsoft Excel). Our hack was to create a Looker Studio Community Connector which will help you view the results of different input values or different scenarios at the same time. These input values (parameters) will be passed to a Google Sheet which will then do a series of complex calculations before it returns data back to Looker Studio. Some refer to this as What-If analysis as well.
 
