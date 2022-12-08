@@ -12,7 +12,7 @@ function optionsForSheetName(sheetId) {
   sheets.forEach(function (sheet) {
     sheetNames.push(sheet.getName());
   });
-  console.log(sheetNames);
+  // console.log(sheetNames);
 
   return sheetNames;
 }
@@ -87,8 +87,8 @@ function getConfig(request) {
           .setAllowOverride(true);
         var spreadsheetNameOptions = optionsForSpreadsheetName();
         spreadsheetNameOptions.forEach(function(labelAndValue) {
-          console.log("Label: "+labelAndValue[0]);
-          console.log("Value: "+labelAndValue[1]);
+          // console.log("Label: "+labelAndValue[0]);
+          // console.log("Value: "+labelAndValue[1]);
           var spreadsheetNameLabel = labelAndValue[0];
           var spreadsheetNameValue = labelAndValue[1];
           spreadsheetName.addOption(connectorConfig.newOptionBuilder().setLabel(spreadsheetNameLabel).setValue(spreadsheetNameValue));
@@ -118,8 +118,8 @@ function getConfig(request) {
           .setAllowOverride(true);
         var spreadsheetNameOptions = optionsForSpreadsheetName();
         spreadsheetNameOptions.forEach(function(labelAndValue) {
-          console.log("Label: "+labelAndValue[0]);
-          console.log("Value: "+labelAndValue[1]);
+          // console.log("Label: "+labelAndValue[0]);
+          // console.log("Value: "+labelAndValue[1]);
           var spreadsheetNameLabel = labelAndValue[0];
           var spreadsheetNameValue = labelAndValue[1];
           spreadsheetName.addOption(connectorConfig.newOptionBuilder().setLabel(spreadsheetNameLabel).setValue(spreadsheetNameValue));
@@ -249,7 +249,7 @@ function getFields(request, content) {
   }
   var firstLineColumns = firstLineContent.split(valueSeparator);
 
-  console.log(firstLineColumns);
+  // console.log(firstLineColumns);
 
   var i = 1;
   firstLineColumns.forEach(function(value) {
