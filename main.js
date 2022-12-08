@@ -386,7 +386,8 @@ function getAnOrderFromCsvFile(fieldsIdsFromRequest, fieldsInOrderFromCsvFile) {
 
 function isAdminUser(){
  var email = Session.getEffectiveUser().getEmail();
-  if( email == 'ceo@datastudiolabs.com' || email == 'cto@datastudiolabs.com' || email == 'thedatastudiolabs@gmail.com' ){
+ var adminEmail = userProperties.getProperty('admin_email');
+  if( email == adminEmail ){
     return true; 
   } else {
     return false;
