@@ -5,6 +5,7 @@ function sendUserError(message) {
     .throwException();
 }
 
+// This funtion returns an array of the different sheet names of the sheets that are under a given Google Sheet ID that is passed as the "sheetId" parameter
 function optionsForSheetName(sheetId) {
   var ss = SpreadsheetApp.openById(sheetId);
   var sheets = ss.getSheets();
@@ -17,6 +18,7 @@ function optionsForSheetName(sheetId) {
   return sheetNames;
 }
 
+// This function returns an array of all the Google Sheets in the Google Drive of the user who is creating the data source.
 function optionsForSpreadsheetName() {
   var docs = DriveApp.getFilesByType(MimeType.GOOGLE_SHEETS);
   var spreadsheetNames = [];
@@ -31,6 +33,7 @@ function optionsForSpreadsheetName() {
   return spreadsheetNames;
 }
 
+// This is the getConfig() function that is called by Looker Studio when configuring a data connection/source
 function getConfig(request) {
   var communityConnector = DataStudioApp.createCommunityConnector();
   var connectorConfig = communityConnector.getConfig();
@@ -215,6 +218,7 @@ function findLineSeparator(content) {
   }
 }
 
+// This function is used to fetch data from a given Google Sheet's specified Sheet Range & then it converts it to CSV format and returns the data.
 function fetchData(sheetId, sheetNameRange){
   var sheet = SpreadsheetApp.openById(sheetId);
   var vals = sheet.getRange(sheetNameRange).getValues();
@@ -224,6 +228,7 @@ function fetchData(sheetId, sheetNameRange){
   return csvString;
 }
 
+// This function is called to form the schema for the data connection in Looker Studio
 function getFields(request, content) {
   var communityConnector = DataStudioApp.createCommunityConnector();
   var fields = communityConnector.getFields();
@@ -267,6 +272,7 @@ function getFields(request, content) {
   return fields;
 }
 
+// This function is called to get the Schema of the data connection each time it is needed from Looker Studio's end.
 function getSchema(request) {
   var sheetName = request.configParams['sheetName'];
   var sheetRange = request.configParams['sheetRange'];
@@ -276,6 +282,7 @@ function getSchema(request) {
   return {schema: fields};
 }
 
+// This function is called by Looker Studio each time it needs to refresh the data in a Looker Studio report. The getData function gets called by each component in a Looker Studio report.
 function getData(request) {
 
   var sheetId = request.configParams['sheetId'];
@@ -378,15 +385,18 @@ function getData(request) {
   return resultt;
 }
 
+// This function is used to prevent the chances of the field order getting shuffled when it is being returned as part of the schema in the getData response.
 function getAnOrderFromCsvFile(fieldsIdsFromRequest, fieldsInOrderFromCsvFile) {
   return fieldsInOrderFromCsvFile.filter(function(fieldFromCsvFile) {
     return fieldsIdsFromRequest.indexOf(fieldFromCsvFile.name) >= 0;
   });
 }
 
+// This function is called by Looker Studio to check if the effective user of a session is an admin user so that it's able to show more detailed info in errors. This comes in handy during debugging.
 function isAdminUser(){
  var email = Session.getEffectiveUser().getEmail();
- var adminEmail = userProperties.getProperty('admin_email');
+//  var adminEmail = userProperties.getProperty('admin_email');
+  var adminEmail = 'thedatastudiolabs@gmail.com'
   if( email == adminEmail ){
     return true; 
   } else {
