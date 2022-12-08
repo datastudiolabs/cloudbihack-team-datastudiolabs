@@ -55,10 +55,10 @@ Link to the dashboard - https://lookerstudio.google.com/s/gSILkfNhSfc
 
 
 
-## Quick Help Video
-You can have a look at the following quick help video incase you're not familiar with how Looker Studio & Looker Studio Community Connectors work.
+## Quick Guide on creating a data connection using our Community Connector
+You can have a look at the following quick guide video incase you're not familiar with how Looker Studio & Looker Studio Community Connectors work. 
 
-[![IMAGE_ALT](https://img.youtube.com/vi/ARMQLh0tyA4/maxresdefault.jpg)](https://youtu.be/ARMQLh0tyA4)
+[![IMAGE_ALT](https://img.youtube.com/vi/BIgEs7xt14o/maxresdefault.jpg)](https://youtu.be/BIgEs7xt14o)
 
 ## Live Demos of  Looker Studio Dashboards using this community connector
 - [Scenario Manager Demo Dashboard](https://lookerstudio.google.com/s/iPrdyrewLig) ([*Google Sheet Containing the Data*](https://docs.google.com/spreadsheets/d/1MBq3xxq5251VLIIx_b4Fzl2MzfJAhbp1kJ75ylb0D64/edit?usp=sharing))
