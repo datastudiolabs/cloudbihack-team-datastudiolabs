@@ -395,8 +395,7 @@ function getAnOrderFromCsvFile(fieldsIdsFromRequest, fieldsInOrderFromCsvFile) {
 // This function is called by Looker Studio to check if the effective user of a session is an admin user so that it's able to show more detailed info in errors. This comes in handy during debugging.
 function isAdminUser(){
  var email = Session.getEffectiveUser().getEmail();
-//  var adminEmail = userProperties.getProperty('admin_email');
-  var adminEmail = 'thedatastudiolabs@gmail.com'
+ var adminEmail = userProperties.getProperty('admin_email');
   if( email == adminEmail ){
     return true; 
   } else {
